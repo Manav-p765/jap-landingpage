@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink-black: #0f0f0f;
+  --color-ink-grey-dark: #2b2b2b;
+  --color-ink-grey: #8c8c8c;
+  --color-ink-grey-light: #e5e5e5;
+  --color-ink-red: #d32f2f;
+  --color-ink-white: #fcfcfc;
+  
+  --font-japanese: "Mayashita", serif;
+}
+
+@font-face {
+  font-family: 'Mayashita';
+  src: url('/fonts/mayashita.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-ink-grey-light);
+    color: var(--color-ink-black);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+}
